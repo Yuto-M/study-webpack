@@ -1,0 +1,20 @@
+{
+  "name": "study-webpack",
+  "version": "1.0.0",
+  "description": "webpack勉強用",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuto-M/study-webpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yuto-M/study-webpack/issues"
+  },
+  "homepage": "https://github.com/Yuto-M/study-webpack#readme"
+}
