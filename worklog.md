@@ -26,3 +26,5 @@ npm i -D <package_name>
 ```
 npm i <package_name>
 ```
+
+## webpack-dev-serverはコンパイル後に出力ファイルを書き込みません
