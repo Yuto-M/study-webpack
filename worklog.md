@@ -28,3 +28,5 @@ npm i <package_name>
 ```
 
 ## webpack-dev-serverはコンパイル後に出力ファイルを書き込みません
+
+## loaderの適用順は、下から上
