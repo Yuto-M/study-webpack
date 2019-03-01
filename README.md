@@ -10,13 +10,13 @@ webpack勉強用
     - babelrcに設定書き出す
 - ~~eslint導入~~
 - 画像を扱う
-    - srcに置いた画像はdistに移動して欲しい。ファイル名変えずに。
+    - ~~srcに置いた画像はdistに移動して欲しい。ファイル名変えずに。~~
 - SCSSのコンパイル
     - postcss使う
-    - CSSはインラインではなく、ファイルとして外部に出す
+    - ~~CSSはインラインではなく、ファイルとして外部に出す~~
 - ejsのコンパイル
 - fontawesome導入
-- buildしたらdistディレクトリに吐き出す
+- ~~buildしたらdistディレクトリに吐き出す~~
 - portfinder使うかも??
 - typescript導入するかも??
 
