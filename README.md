@@ -5,7 +5,9 @@ webpack勉強用
 ## Goal
 - webpack公式tutorialをとりあえずやる
 - ES6のトランスパイル
-    - Babel入れてなんやかんやする
+    - ~~Babel入れてなんやかんやする~~
+    - target browserを決める
+    - babelrcに設定書き出す
 - eslint導入
 - 画像を扱う
     - srcに置いた画像はdistに移動して欲しい。ファイル名変えずに。
