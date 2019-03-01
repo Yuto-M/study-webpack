@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import printMe from './print.js';
+import scss from '../scss/index.scss'; // eslint-disable-line no-unused-vars
 
 function component() {
   let element = document.createElement('div');
@@ -9,7 +10,7 @@ function component() {
   btn.innerHTML = 'Click me and check the console!';
   btn.onclick = printMe;
   element.appendChild(btn);
-  
+
   return element;
 }
 
