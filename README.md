@@ -20,6 +20,13 @@ webpack勉強用
 - portfinder使うかも??
 - typescript導入するかも??
 
+## 実装するか迷いどこ
+- 画像のコピーはwebpackのプラグインじゃなくて、gulpのタスクとして作成する
+- scssのコンパイルもwebpackで処理するんじゃなくて、gulpタスクとして定義する
+
+## 所感
+なんでもかんでもwebpackにすると逆に大変。jsのビルドくらいにと留めて他はgulpに任せたほうが無難かも。
+
 ## 参考にするサイト
 webpack公式Guide
 https://webpack.js.org/guides
