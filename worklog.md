@@ -28,3 +28,8 @@ npm i <package_name>
 ```
 
 ## webpack-dev-serverはコンパイル後に出力ファイルを書き込みません
+
+## loaderの適用順は、下から上
+
+## MiniCssExtractPluginでcssを別ファイルに吐き出すにはjsファイルでscssファイルをimportしないといけないとか気持ち悪い。なんか他に方法はないのか。
+https://www.expexp.jp/webpack/
