@@ -39,5 +39,8 @@ https://ics.media/entry/12140
 eslint設定ファイルについて
 https://qiita.com/makotot/items/822f592ff8470408be18
 
-画像のコピーや、webpack-dev-serverを使った時に実ファイルが書き出されない問題の解消法を教えてくれる。神。
+画像のコピーや、webpack-dev-serverを使った時に実ファイルが書き出されない問題の解消法を教えてくれる。
 https://qiita.com/pepoipod/items/e41105e8f3afd47dc01c
+
+gulpのタスクの書き方が変わりました
+https://blog.yudppp.com/posts/gulp4/
