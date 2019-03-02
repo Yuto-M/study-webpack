@@ -2,6 +2,10 @@
 # 概要
 webpack勉強用
 
+|環境|バージョン|
+|---|---|
+|node|9.6.1|
+
 ## Goal
 - webpack公式tutorialをとりあえずやる
 - ES6のトランスパイル
