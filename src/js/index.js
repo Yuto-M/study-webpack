@@ -10,7 +10,7 @@ function component() {
   btn.innerHTML = 'Click me and check the console!';
   btn.onclick = printMe;
   element.appendChild(btn);
-  console.log('hh');
+  console.log('hhd');
   return element;
 }
 
