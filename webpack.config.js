@@ -1,19 +1,15 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const WriteFilePlugin = require('write-file-webpack-plugin');
 
 module.exports = {
     mode: 'development',
     entry: {
         app: './src/js/index.js',
-        // style: './src/scss/index.scss'
     },
     output: {
-        filename: 'js/[name].bundle.js',
-        path: path.resolve(__dirname, 'dist', 'assets')
+        filename: 'assets/js/[name].bundle.js',
+        path: path.resolve(__dirname, 'dist')
     },
     module: {
         rules: [
@@ -60,31 +56,18 @@ module.exports = {
         ]
     },
     devtool: 'inline-source-map',
-    devServer: {
-        contentBase: './dist'
-    },
     plugins: [
-        new CleanWebpackPlugin(['dist/*']),
-        // new HtmlWebpackPlugin({
-        //     title: 'Output Management'
-        // }),
         new MiniCssExtractPlugin({
-            filename: 'css/[name].css'
+            filename: 'assets/css/[name].css'
         }),
         new CopyWebpackPlugin(
             [
                 {
                     from: 'images',
-                    to: 'images',
+                    to: 'assets/images',
                     context: 'src/'
                 },
-                {
-                    from: '.',
-                    to: '../',
-                    context: 'src/tpl/'
-                }
             ],
         ),
-        new WriteFilePlugin()
     ],
 };
