@@ -15,9 +15,10 @@ webpack勉強用
     - postcss使う
     - ~~CSSはインラインではなく、ファイルとして外部に出す~~
 - ejsのコンパイル
-- fontawesome導入
+    - ~~webpack経由だとファイルを手動で指定する必要があるのでgulp経由で行うように変更~~
 - ~~buildしたらdistディレクトリに吐き出す~~
 - portfinder使うかも??
+- fontawesome導入??
 - typescript導入するかも??
 
 ## 実装するか迷いどこ
@@ -26,6 +27,7 @@ webpack勉強用
 
 ## 所感
 なんでもかんでもwebpackにすると逆に大変。jsのビルドくらいにと留めて他はgulpに任せたほうが無難かも。
+ただgulpもバージョン上がって少し変わったから結論環境構築はめんどくさい。
 
 ## 参考にするサイト
 webpack公式Guide
