@@ -1,25 +1,73 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: 'development',
     entry: {
-        app: './src/index.js',
-        print: './src/print.js',
+        app: './src/js/index.js',
     },
-    devtool: 'inline-source-map',
-    devServer: {
-        contentBase: './dist'
-    },
-    plugins: [
-        new CleanWebpackPlugin(['dist/*']),
-        new HtmlWebpackPlugin({
-            title: 'Output Management'
-        })
-    ],
     output: {
-        filename: '[name].bundle.js',
+        filename: 'assets/js/[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
+    module: {
+        rules: [
+            {
+                enforce: 'pre',
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'eslint-loader'
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            '@babel/preset-env',
+                        ]
+                    }
+                }
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {},
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            url: false,
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    devtool: 'inline-source-map',
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: 'assets/css/[name].css'
+        }),
+        new CopyWebpackPlugin(
+            [
+                {
+                    from: 'images',
+                    to: 'assets/images',
+                    context: 'src/'
+                },
+            ],
+        ),
+    ],
 };
